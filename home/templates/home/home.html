@@ -1,0 +1,12 @@
+{% extends "home/layout.html"%}
+{% block body %}
+<h1>TASKS</h1>
+<div class="container">
+    <ul>
+        {% for task in tasks %}
+        <li> {{ task }}</li>
+        {% endfor %}
+    </ul>
+</div>
+ 
+{% endblock %}
